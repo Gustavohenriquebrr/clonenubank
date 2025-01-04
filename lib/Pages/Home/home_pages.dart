@@ -1,5 +1,6 @@
 import 'package:clonenubank/Pages/Home/Model/Header.dart';
-import 'package:clonenubank/utils/colors_standard.dart';
+import 'package:clonenubank/Pages/account/ACCOUNT.dart';
+import 'package:clonenubank/Pages/account/actions/menu_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -14,7 +15,7 @@ class _HomePagesState extends State<HomePages> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: backgroundColor,
+      //  background Color: backgroundColor,
       appBar: _appbar(),
       body: SingleChildScrollView(
         child: Container(
@@ -22,6 +23,8 @@ class _HomePagesState extends State<HomePages> {
           child: Column(
             children: [
               Header(),
+              AccountNubank(),
+              MenuIcons(),
             ],
           ),
         ),
